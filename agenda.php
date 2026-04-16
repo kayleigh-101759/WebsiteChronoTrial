@@ -6,7 +6,7 @@ require 'config.php';
 
 
 try{
-    $query = "SELECT * FROM Record ORDER BY (SUBSTRING_INDEX(duration, ':', 1) * 60 + SUBSTRING_INDEX(duration, ':', -1)) DESC";
+    $query = "SELECT * FROM Record ORDER BY (SUBSTRING_INDEX(time, ':', 1) * 60 + SUBSTRING_INDEX(time, ':', -1)) DESC";
     $stmt = $conn->prepare($query);
     $stmt -> execute();
 
