@@ -29,9 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (isset($_POST['username']) &&
             isset($_POST['time']) &&
             isset($_POST['datum'])){
-            print ('Er is niks ingevoerd');
-        }else{
             print ('het item is toegevoegd');
+        }else{
+            print ('Er is niks ingevoerd');
         }
 
         // Controleer of het is gelukt
